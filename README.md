@@ -20,6 +20,7 @@ Clona este repositorio y en la carpeta raíz ejecuta los siguientes comandos:
 
 1. `yarn install`
 1. `touch db/db.sqlite` para crear el archivo vacío que usará SQLite. Si no te funciona, simplemente crea un archivo llamado `db.sqlite` dentro de la carpeta `db`
+1. `yarn add sqlite3`
 1. `yarn run db:migrate` para crear las tablas en la DB
 1. `yarn run db:seed` para llenar la DB con datos de relleno
 1. `yarn start` para iniciar el servidor

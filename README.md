@@ -26,3 +26,51 @@ Clona este repositorio y en la carpeta raíz ejecuta los siguientes comandos:
 1. `yarn start` para iniciar el servidor
 
 Siguiendo estos pasos, ahora en http://localhost:3000/graphiql deberías ver GraphiQL, y http://localhost:3000/graphql es el endpoint que usarás en tus clientes.
+
+uno especifica lo que desea pedir
+```
+{
+  cursos{
+    titulo
+    profesor{
+      nombre
+      nacionalidad
+    }
+  }
+  profesores {
+    nombre
+  }
+}`
+```
+
+```
+{
+  "data": {
+    "cursos": [
+      {
+        "titulo": "laboriosam ea",
+        "profesor": {
+          "nombre": "Miss Noemie Von",
+          "nacionalidad": "Madagascar"
+        }
+      },
+      {
+        "titulo": "molestiae natus",
+        "profesor": {
+          "nombre": "Miss Noemie Von",
+          "nacionalidad": "Madagascar"
+        }
+      }
+    ],
+    "profesores": [
+      {
+        "nombre": "Miss Claude Schimmel"
+      },
+      {
+        "nombre": "Mrs. Rudy Howe"
+      }
+    ]
+  }
+}
+```
+
